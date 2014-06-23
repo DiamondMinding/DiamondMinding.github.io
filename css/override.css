@@ -135,6 +135,8 @@
 
 .fold-wrapper {
     /********************* TODO: Parralax Scrolling? */
+    /* fallback: */
+    background-color: #9E1F63;
     background-image: url('../img/scapes/tmp2.jpg');
     background-size: cover;
     background-position: center center;
