@@ -16,6 +16,9 @@
  *
  * Darkened Blue:
  *  - #4988B5   rgb(73, 136, 181)
+ *
+ * Darkened Purple:
+ *  - #7E184F   rgb(126, 24, 79)
 **/
 
 ::-webkit-scrollbar {
@@ -35,6 +38,10 @@
     background: rgba(88,88,86,0.8);
 }
 
+
+.alert {
+    margin: 0;
+}
 
 .circles {
     display: inline-block;
@@ -111,11 +118,13 @@
     background: #7EACCC;
     padding: 20px 0px;
     color: #F8F8F8;
+    border-bottom: 3px solid #4988B5;
 }
 .container-purple {
     background: #9E1F63;
     padding: 30px 0px;
     color: #FFF;
+    border-bottom: 3px solid ;
 }
 
 
@@ -132,6 +141,16 @@
 }
 
 
+footer {
+    background: #EEE;
+    font-size: smaller;
+    font-weight: 200;
+    color: #888;
+    padding: 40px 0px;
+    border-top: 3px solid #DDD;
+}
+
+
 header {
     height: 75px;
     padding: 10px 0px;
@@ -141,8 +160,9 @@ header {
 
     header img {
 	max-height: 100%;
+	max-width: 80%;
 	display: block;
-	margin: 0px auto;
+	margin: auto;
     }
 
 .iframe-responsive {
@@ -167,6 +187,18 @@ header {
     font-size: 50px;
     margin: 30px;
     text-align: center;
+}
+
+.jumbotron p,
+.jumbotron h1,
+.jumbotron h2,
+.jumbotron h3 {
+    font-weight: lighter;
+}
+
+.jump-anchor {
+    display: block;
+    visibility: hidden;
 }
 
 .navbar {
