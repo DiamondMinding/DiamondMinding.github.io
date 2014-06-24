@@ -5,6 +5,7 @@
   <title>Diamond Minding - Brain Balancing</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="shortcut icon" href="img/logo-web-icon.jpg" type="image/jpg">
   <link href="http://fonts.googleapis.com/css?family=Raleway:400,200,300,500" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/override.css">
@@ -17,10 +18,19 @@
 </head>
 <body>
 
-  <div class="alert alert-danger alert-dismissable">
+  <!-- Fixed Elements -->
+  <div class="go-top">
+    <a href="#">
+      <span class="glyphicon glyphicon-eject"></span>
+      Top
+    </a>
+  </div>
+  <!-- End Fixed -->
+
+  <!--div class="alert alert-danger alert-dismissable">
     WARNING! - This site is still in development. All images & content are placeholders.
     <button type="button" class="close pull-right" data-dismiss="alert" aria-hidden="true">&times;</button>
-  </div>
+  </div-->
 
   <div class="fold-wrapper">
     
@@ -104,9 +114,12 @@
   <div class="container-blue">
     <div class="container">
       <h1 class="jumbo jumbo-inv">What we do at Diamond Minding:</h1>
-      <div class="iframe-responsive">
-	<iframe src="//player.vimeo.com/video/54348266" width="717px" height="403px" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+      <div class="centre-block iframe-feature">
+	<div class="iframe-responsive">
+	  <iframe src="//player.vimeo.com/video/54348266" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+	</div>
       </div>
+      <button type="button" class="btn btn-info btn-feature btn-lg centre-block">Our Services</button>
     </div>
   </div>
 
@@ -183,6 +196,7 @@
 	<div class="jumbotron">
 	  <h2>Ultimately,</h2>
 	  <p>we want to help you make a real positive change to your life</p>
+	  <a class="btn btn-info btn-lg btn-feature">Let's do it</a>
 	</div>
       </div>
     </div>
@@ -195,6 +209,34 @@
       <span>&copy; Diamond Minding 2014 All Rights Reserved.</span>
     </div>
   </footer>
+
+
+
+  <script type="text/javascript">
+    $('a').click(function(){
+        $('html, body').animate({
+            scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+        }, 500);
+        return false;
+    });
+
+    /* Scroll to top show/hide: */
+    $(document).ready(function() {
+        $(window).scroll(function() {
+            if($(this).scrollTop() > 380){
+                $('.go-top').fadeIn(400);
+            } else {
+                $('.go-top').fadeOut(400);
+            }
+        });
+
+        // Animate scroll to top
+        $('.go-top').click(function(){
+            $('html, body').animate({scrollTop : 0},800);
+	    return false;
+        });
+     })
+  </script>
   
 </body>
 </html>
