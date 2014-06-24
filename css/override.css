@@ -335,9 +335,15 @@ header {
 
 
 .iframe-feature {
-    width: 60%;
+    width: 100%;
 }
 
+    /* Screen LG */
+    @media (max-width: 2500px) {
+	.iframe-feature {
+	    width: 60%;
+	}
+    }
 
     /* Screen MD */
     @media (max-width: 992px) {
