@@ -48,10 +48,38 @@ mark, .mark { background: #9AC2D9; color: #000; }
 }
 
 .btn-feature {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.2);
     font-weight: 200;
     font-family: "Raleway",Helvetica,Arial,sans-serif;
     margin-top: 20px;
+}
+
+    .btn-feature.btn-info {
+	border-color: rgba(98, 161, 196, 0.5);
+    }
+
+.btn-hover-danger:hover,
+.btn-hover-danger:active,
+.btn-hover-danger:focus  {
+    color: #FFF;
+    background-color: #D2322D;
+    border-color: #AC2925;
+}
+
+.btn-hover-success:hover,
+.btn-hover-success:active,
+.btn-hover-success:focus  {
+    color: #FFF;
+    background-color: #47A447;
+    border-color: #398439;
+}
+
+.btn-hover-info:hover,
+.btn-hover-info:active,
+.btn-hover-info:focus  {
+    color: #FFF;
+    background-color: #75ACCB;
+    border-color: #4083A9;
 }
 
 .centre-block {
@@ -356,3 +384,22 @@ header {
     margin-bottom: 0px;
     border: none;
 }
+
+.navbar-collapse {
+    max-height: 500px;
+}
+
+.navbar-default .navbar-toggle {
+    color: #FFF;
+    background-color: #75ACCB;
+    border-color: #62A1C4;
+}
+
+    .navbar-default .navbar-toggle .icon-bar {
+	background-color: #FFF;
+    }
+    
+    .navbar-default .navbar-toggle:hover {
+	background-color: #579AC0;
+	border-color: #4083A9;
+    }
