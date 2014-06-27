@@ -1,0 +1,28 @@
+# Site Settings
+title: Diamond Minding
+email: web@diamondminding.uk
+description: "Diamond Minding is a Barin Wave Balancing company from Reading, United Kingdom"
+baseurl: ""
+url: "http://diamondminding.uk"
+
+# Main Nabigation (Manual)
+navigation:
+ - text: Home
+   url: /
+ - text: About
+   url: /about
+ - text: Contact
+   url: /contact
+ - text: Services
+   url: /services
+ - text: Blog
+   url: /blog
+ - text: Affiliates
+   url: /affiliates
+
+
+# Build Settings
+paginate: 4
+paginate_path: "blog/page:num"
+markdown: kramdown
+permalink: pretty
