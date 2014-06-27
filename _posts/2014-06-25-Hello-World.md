@@ -1,9 +1,7 @@
 ---
-title: Hello World"
+title: Hello World
+layout: post
 ---
-
-Hello World!
-============
 
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id enim nisl. Sed sed venenatis tellus. Nunc lobortis lectus velit, nec congue massa aliquam ut. Mauris id interdum sem. Suspendisse non lorem convallis, consectetur ipsum in, tincidunt tellus. Donec ante tortor, tempor quis fringilla quis, pharetra ut elit. Mauris bibendum sed urna eu vestibulum. Etiam id sem sed mi dignissim ultricies. Integer euismod, tellus eget laoreet laoreet, risus mi commodo quam, sed sagittis velit eros sit amet metus. Duis nec diam ipsum. Nullam non facilisis est, at gravida dolor. Vivamus eget iaculis est, nec cursus urna.
 

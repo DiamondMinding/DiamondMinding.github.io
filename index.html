@@ -1,32 +1,16 @@
 ---
 layout: home
 title: Home
+
+#              _       
+#  _ __   ___ | |_ ___ 
+# | '_ \ / _ \| __/ _ \
+# | | | | (_) | ||  __/
+# |_| |_|\___/ \__\___|
+#
+# Edit the content of this page from _data/home.yml
+
 ---
-
-<!-- First circle at the top of the page -->
-{% capture leftcircle %}
-It's about you.
-===============
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis ligula dui, in euismod sem iaculis vitae. Nunc neque metus, convallis non diam nec, venenatis placerat odio.
-{% endcapture %}
-
-
-<!-- Central circle at the top of the page -->
-{% capture middlecircle %}
-Brain Balancing?
-===
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis ligula dui, in euismod sem iaculis vitae. Nunc neque metus, convallis non diam nec, venenatis placerat odio.
-{% endcapture %}
-
-<!-- The rightmost circle at the top of the page -->
-{% capture rightcircle %}
-Clear your mind.
-===
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis ligula dui, in euismod sem iaculis vitae. Nunc neque metus, convallis non diam nec, venenatis placerat odio.
-{% endcapture %}
 
 
 <div class="fold-wrapper">
@@ -35,15 +19,15 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis ligula dui, i
     <div class="fold-main">
       <ul class="circles">
 	<li><a href="#you">
-	    {{ leftcircle | markdownify }}
+	    {{ site.data.home.left_circle | markdownify }}
 	    <span class="glyphicon glyphicon-chevron-down"></span>
 	</a></li>
 	<li><a href="#what">
-	    {{ middlecircle | markdownify }}
+	    {{ site.data.home.middle_circle | markdownify }}
 	    <span class="glyphicon glyphicon-chevron-down"></span>
 	</a></li>
 	<li><a href="#why">
-	    {{ rightcircle | markdownify }}
+	    {{ site.data.home.right_circle | markdownify }}
 	    <span class="glyphicon glyphicon-chevron-down"></span>
 	</a></li>
       </ul>
@@ -56,24 +40,17 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis ligula dui, i
 
 <div class="container-blue">
   <div class="container">
-    <h1 class="jumbo jumbo-inv">What we do at Diamond Minding:</h1>
-    <div class="centre-block iframe-feature">
-      <div class="iframe-responsive">
-	<iframe src="//player.vimeo.com/video/54348266" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-      </div>
-    </div>
-    <button type="button" class="btn btn-info btn-feature btn-lg centre-block">Our Services</button>
+    <h1 class="jumbo jumbo-inv">{{ site.data.home.blue_title }}</h1>
+    {{ site.data.home.blue_content | markdownify }}
   </div>
 </div>
 
 <div class="container">
   <a name="you" class="jump-anchor"></a>
-  <h1 class="jumbo">It's all about you.</h1>
+  <h1 class="jumbo">{{ site.data.home.section_one_title }}</h1>
   <div class="row">
     <div class="col-sm-6">
-      <div class="thumbnail">
-	<img class="img-responsive" src="http://lorempixel.com/1600/900/abstract" alt="1600x900">
-      </div>
+      {{ site.data.home.section_one_col_left | markdownify }}
     </div>
     <div class="col-sm-6">
       <h2>Lorem Ipsum</h2>

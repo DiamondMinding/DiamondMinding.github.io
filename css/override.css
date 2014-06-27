@@ -120,8 +120,6 @@ mark, .mark { background: #9AC2D9; color: #000; }
 	margin-top: -40px;
     }
 
-/*********** TODO: Add responsive width & block changes */
-
     .circles > li > a {
 	width: 380px;
 	height: 380px;
@@ -160,6 +158,11 @@ mark, .mark { background: #9AC2D9; color: #000; }
 	height: 120px;
 	overflow: auto;
 	padding: 0px 25px;
+    }
+
+    /* Safeguard against editing accidents: */
+    .circles li > a p + p {
+	display: none;
     }
 
     /* Custom Breakpoint */
@@ -233,7 +236,6 @@ mark, .mark { background: #9AC2D9; color: #000; }
     }
 
 .fold-wrapper {
-    /********************* TODO: Parralax Scrolling? */
     /* fallback: */
     background-color: #9E1F63;
     background-image: url('../img/scapes/tmp2.jpg');
@@ -299,7 +301,7 @@ header {
 }
 
     header img {
-	max-height: 55px;
+	max-height: 45px;
 	max-width: 80%;
 	display: block;
 	margin: auto;
@@ -516,6 +518,32 @@ header {
 	border-radius: 3px;
 	color: #444;
     }
+
+
+.post-wrap {
+    padding: 20px 0px;
+}
+
+    .post-wrap + .post-wrap {
+	border-top: 1px solid #DDD;
+    }
+
+.post-title {
+    font-size: 45px;
+    margin-top: 5px;
+}
+
+
+    .post-title a:hover,
+    .post-title a:focus {
+	text-decoration: none;
+    }
+
+.post-meta {
+    color: #888;
+    font-size: 12px;
+}
+
 
 
 /*** GCS Styles ***/

@@ -5,24 +5,24 @@ description: "Diamond Minding is a Barin Wave Balancing company from Reading, Un
 baseurl: ""
 url: "http://diamondminding.uk"
 
-# Main Nabigation (Manual)
+# Main Navigation (Manual)
 navigation:
  - text: Home
    url: /
  - text: About
-   url: /about
+   url: /about/
  - text: Contact
-   url: /contact
+   url: /contact/
  - text: Services
-   url: /services
+   url: /services/
  - text: Blog
-   url: /blog
+   url: /blog/
  - text: Affiliates
-   url: /affiliates
+   url: /affiliates/
 
 
 # Build Settings
-paginate: 4
+paginate: 3
 paginate_path: "blog/page:num"
 markdown: kramdown
 permalink: pretty
