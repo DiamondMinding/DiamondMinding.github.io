@@ -64,10 +64,23 @@ blue_content: |
 
 section_one_title: "It's all about you."
 
+
 section_one_col_left: |
     <div class="thumbnail">
         <img class="img-responsive" src="http://lorempixel.com/1600/900/abstract" alt="1600x900">
     </div>
+
+
+section_one_col_right: |
+    Lorem Ipsum
+    -----------
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sem nibh, euismod quis dignissim vehicula, rutrum eget neque. Donec tincidunt consectetur hendrerit. Phasellus urna odio, pretium id lectus sit amet, egestas egestas urna. Pellentesque cursus tortor vitae mauris elementum auctor.
+    
+    ###Dolor sit Amet
+
+    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nullam ut molestie arcu. Cras vitae arcu non metus facilisis hendrerit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec bibendum nisl id erat dignissim congue. Praesent rutrum vehicula magna, id gravida mi molestie ac.
+
 
 
 #                  _   _                _                 
@@ -77,6 +90,8 @@ section_one_col_left: |
 #   |___/\___|\___|\__|_|\___/|_| |_|   \__| \_/\_/ \___/ 
 #
 
+
+section_two_title: "So what is Brain Balancing?"
 
 
 #                  _   _                _   _                   

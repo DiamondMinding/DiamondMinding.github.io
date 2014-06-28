@@ -200,6 +200,14 @@ mark, .mark { background: #9AC2D9; color: #000; }
     }
 
 
+cite {
+    display: block;
+    font-size: 90%;
+    font-style: italic;
+    color: #AAA;
+    padding-top: 15px;
+}
+
 .container-blue {
     background: #7EACCC;
     padding: 20px 40px;
@@ -318,6 +326,10 @@ header {
 	    height: auto;
 	}
     }
+
+hr {
+    border-color: #CCC;
+}
 
 .iframe-responsive {
     position: relative;
