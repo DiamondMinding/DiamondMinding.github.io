@@ -151,13 +151,45 @@
 <p>Markdown is the simple syntax used for writing blog posts &amp; pages in plain text in such
 a way as when uploaded to the site, the file has rich formatting, links, images &amp; more.</p>
 
-<p>This guide will show the syntax and appearance of all markdown elements.</p>
+<p>This guide will show the syntax and appearance of all Markdown elements, first with the
+Markdown syntax,</p>
+
+<pre><code>In a block like this,
+</code></pre>
+
+<p>Then show how that would appear on the webpage,</p>
+
+<p>In a block like this.</p>
+
+<h3 id="a-quick-note-on-writing-posts">A quick note on writing posts</h3>
+
+<p>All of the posts on this site need to be placed in the <code>_posts</code> folder and named using
+the convention <code>YYYY-MM-DD-Post-Name.md</code>. The <code>.md</code> file extension means that this is a Markdown 
+file. Inside of that file, at the top of the document it is a <em>requirement</em> to have a 
+section like this:</p>
+
+<pre><code>---
+title: Post Title (Doesn't have to match the filename title)
+layout: post
+---
+</code></pre>
+
+<p>Don’t change the <code>layout: post</code> option unless you wish to use a different layout (They’re in the 
+<code>_layouts</code> folder) which is highly unlikely and rarely necessary.</p>
+
+<p>This section of the post is not Markdown so may confuse a third party application and render
+weirdly, showing a horizontal rule and treating the last line as a heading.</p>
+
+<p><br />
+<br />
+<br />
+<br /></p>
 
 <h1 id="typography">Typography</h1>
 
 <h2 id="headings">Headings</h2>
 
-<p>The main headings you’ll use, H1 &amp; H2 use this syntax:</p>
+<p>The main headings you’ll use, h1 &amp; h2 use this syntax:</p>
 
 <pre><code>Heading 1
 =========
@@ -173,7 +205,7 @@ Heading 2
 <h2 id="heading-2">Heading 2</h2>
 
 <p>They can also follow the alternate syntax: 
-Headings from <code>h1</code> through <code>h6</code> are constructed with a <code>#</code> for each level:</p>
+Headings from <code>h1</code> through <code>h6</code> can be written with a <code>#</code> for each level of heading:</p>
 
 <pre><code># h1 Heading
 ## h2 Heading
@@ -183,7 +215,7 @@ Headings from <code>h1</code> through <code>h6</code> are constructed with a <co
 ###### h6 Heading
 </code></pre>
 
-<p>Note that anything past H4 has little use. These look like this in the final web page:</p>
+<p>Note that anything past h4 has little use. These look like this in the final web page:</p>
 
 <h1 id="h1-heading">h1 Heading</h1>
 
@@ -201,49 +233,34 @@ Headings from <code>h1</code> through <code>h6</code> are constructed with a <co
 <br />
 <br /></p>
 
-<h2 id="horizontal-rules">Horizontal Rules</h2>
-
-<p>The HTML <code>&lt;hr&gt;</code> element is for creating a “thematic break” between paragraph-level elements. 
-In markdown, you can create a <code>&lt;hr&gt;</code> with any of the following in your Markdown document:</p>
-
-<ul>
-  <li><code>___</code>: three consecutive underscores</li>
-  <li><code>---</code>: three consecutive dashes</li>
-  <li><code>***</code>: three consecutive asterisks</li>
-</ul>
-
-<p>Any of these would look like:</p>
-
-<hr />
-
-<p><br />
-<br />
-<br /></p>
-
 <h2 id="body-copy--paragraphs">Body Copy  (Paragraphs)</h2>
 
 <p>Body copy written as normal, plain text will be formed into paragraphs on the web page.
 Note that to start a new paragraph you need to leave a line, and that you can put single
-line breaks in anywhere without affecting the formatting. Note <code>...himenaeos. Nullam ...</code></p>
+line breaks in anywhere without affecting the formatting. Note <code>...mandamus. Et legere ...</code></p>
 
 <p>So this body copy in Markdown:</p>
 
-<pre><code>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere ocurreret 
-pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore officiis 
+<pre><code>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. 
+Et legere ocurreret pri, animal tacimates complectitur ad cum. 
+Cu eum inermis inimicus efficiendi. Labore officiis 
 his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.
 
-Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-Nullam ut molestie arcu. Cras vitae arcu non metus facilisis hendrerit. 
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+per inceptos himenaeos. Nullam ut molestie arcu. Cras vitae arcu non 
+metus facilisis hendrerit. 
 </code></pre>
 
 <p>Will look like:</p>
 
-<p>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. Et legere 
-ocurreret pri, animal tacimates complectitur ad cum. Cu eum inermis inimicus efficiendi. Labore 
-officiis his ex,   soluta officiis concludaturque ei qui, vide sensibus vim ad.</p>
+<p>Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. 
+Et legere ocurreret pri, animal tacimates complectitur ad cum. 
+Cu eum inermis inimicus efficiendi. Labore officiis 
+his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.</p>
 
-<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
-Nullam ut molestie arcu. Cras vitae arcu non metus facilisis hendrerit. </p>
+<p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+per inceptos himenaeos. Nullam ut molestie arcu. Cras vitae arcu non 
+metus facilisis hendrerit. </p>
 
 <p><br />
 <br />
@@ -277,59 +294,10 @@ Nullam ut molestie arcu. Cras vitae arcu non metus facilisis hendrerit. </p>
 
 <p><br />
 <br />
-<br /></p>
-
-<h2 id="block-quotes">Block Quotes</h2>
-
-<p>For quoting blocks of content from another source within your document.</p>
-
-<p>Add <code>&gt;</code> before any text you want to quote. </p>
-
-<pre><code>&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
-</code></pre>
-
-<p>Will show up as:</p>
-
-<blockquote>
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-</blockquote>
-
-<p>Blockquotes can also be nested:</p>
-
-<pre><code>&gt; This is a paragraph.
-&gt; 
-&gt; &gt; A nested blockquote, i.e. a blockquote inside a blockquote.
-&gt; 
-&gt; ## Headers work
-&gt; 
-&gt; * lists too
-&gt; 
-&gt; and all other block-level elements
-&gt; &lt;cite&gt;Unfortunately, if you need a citation, that's a HTML thing&lt;/cite&gt;
-</code></pre>
-
-<p>Shows on the page as:</p>
-
-<blockquote>
-  <p>This is a paragraph.</p>
-
-  <blockquote>
-    <p>A nested blockquote, i.e. a blockquote inside a blockquote.</p>
-  </blockquote>
-
-  <h2 id="headers-work">Headers work</h2>
-
-  <ul>
-    <li>lists too</li>
-  </ul>
-
-  <p>and all other block-level elements
-<cite>Unfortunately, if you need a citation, that’s a HTML thing</cite></p>
-</blockquote>
-
-<p><br />
 <br />
 <br /></p>
+
+<h1 id="stylistic-elements">Stylistic Elements</h1>
 
 <h2 id="lists">Lists</h2>
 
@@ -412,7 +380,8 @@ of the text above it</p>
   <li>Eget porttitor lorem</li>
 </ol>
 
-<p><strong>PROTIP</strong>: If you just use <code>1.</code> for each number, GitHub will automatically number each item. For example:</p>
+<p><strong>PROTIP</strong>: If you just use <code>1.</code> for each number, the end product will still be a correctly
+numbered list. For example:</p>
 
 <pre><code>1. Lorem ipsum dolor sit amet
 1. Consectetur adipiscing elit
@@ -440,55 +409,6 @@ of the text above it</p>
 <p><br />
 <br />
 <br /></p>
-
-<h2 id="monospaced-text--code">Monospaced text &amp; Code</h2>
-
-<h3 id="inline-monospace">Inline monospace</h3>
-<p>Wrap inline snippets of code with <code>`</code>. That’s the funny backtick character in the bottom
-left of the keyboard next to <code>z</code> (On a Mac).</p>
-
-<p>So this:</p>
-
-<pre><code>For example, `&lt;section&gt;&lt;/section&gt;` should be wrapped as "inline".
-</code></pre>
-
-<p>Becomes this:</p>
-
-<p>For example, <code>&lt;section&gt;&lt;/section&gt;</code> should be wrapped as “inline” and formatted.</p>
-
-<h3 id="monospaced-blocks">Monospaced blocks.</h3>
-
-<p>This preserves the line breaks &amp; indentation of your text, as well as changing the
-font to monospace. You’ll notice these are heavily used on this page to show syntax.</p>
-
-<p>Adding four spaces to the start of a line, like this:</p>
-
-<pre><code>    // Some comments
-    line 1 of code
-    line 2 of code
-    line 3 of code
-</code></pre>
-<p>Does this:</p>
-
-<pre><code>// Some comments
-line 1 of code
-line 2 of code
-line 3 of code
-</code></pre>
-
-<h3 id="alternately">Alternately</h3>
-
-<p>Use “fences”  <code>~~~</code> to block in multiple lines of code. </p>
-
-<pre><code>~~~
-This is a monospace block that doesn't need to have 4 spaces in front of it
-~~~
-</code></pre>
-
-<p>Comes out of the wash appearing like this:</p>
-
-<pre><code>This is a monospace block that doesn't need to have 4 spaces in front of it
-</code></pre>
 
 <h2 id="tables">Tables</h2>
 
@@ -522,6 +442,44 @@ Note that the line of <code>|---|---|---|</code> etc. is optional and makes the 
       <td>First</td>
       <td>Second</td>
       <td>Third</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>You can also affect the indentation of table columns with some slightly tricky syntax:</p>
+
+<pre><code>| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | £1600 |
+| col 2 is      | centered      |   £12 |
+| zebra stripes | are neat      |    £1 |
+</code></pre>
+
+<p>Adding colons in the place of a <code>-</code> will either centre the text in that column or right-align it, based on whether you use <code>:-----:</code> or <code>------:</code>. The above example looks like this:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tables</th>
+      <th style="text-align: center">Are</th>
+      <th style="text-align: right">Cool</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>col 3 is</td>
+      <td style="text-align: center">right-aligned</td>
+      <td style="text-align: right">£1600</td>
+    </tr>
+    <tr>
+      <td>col 2 is</td>
+      <td style="text-align: center">centered</td>
+      <td style="text-align: right">£12</td>
+    </tr>
+    <tr>
+      <td>zebra stripes</td>
+      <td style="text-align: center">are neat</td>
+      <td style="text-align: right">£1</td>
     </tr>
   </tbody>
 </table>
@@ -617,13 +575,143 @@ Note that the reference is invisible.</p>
 <pre><code>[id]: http://octodex.github.com/images/dojocat.jpg  "The Dojocat"
 </code></pre>
 
-<h2 id="pro---markdown-inside-html">PRO - Markdown inside HTML</h2>
+<p><br />
+<br />
+<br /> </p>
 
-<p><strong>Just a word of warning</strong> - This is <em>not</em> easy, but will esult in some pretty cool looking posts.</p>
+<h2 id="horizontal-rules">Horizontal Rules</h2>
 
-<p>There are two parts to getting content into HTML whilst writing in markdown. You have to first 
+<p>The HTML <code>&lt;hr&gt;</code> element is for creating a “thematic break” between paragraph-level elements. 
+In Markdown, you can create a <code>&lt;hr&gt;</code> with any of the following in your Markdown document:</p>
+
+<ul>
+  <li><code>___</code>: three consecutive underscores</li>
+  <li><code>---</code>: three consecutive dashes</li>
+  <li><code>***</code>: three consecutive asterisks</li>
+</ul>
+
+<p>Any of these would look like:</p>
+
+<hr />
+
+<p><br />
+<br />
+<br /></p>
+
+<h2 id="block-quotes">Block Quotes</h2>
+
+<p>For quoting blocks of content from another source within your document.</p>
+
+<p>Add <code>&gt;</code> before any text you want to quote. </p>
+
+<pre><code>&gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+</code></pre>
+
+<p>Will show up as:</p>
+
+<blockquote>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+</blockquote>
+
+<p>Blockquotes can also be nested:</p>
+
+<pre><code>&gt; This is a paragraph.
+&gt; 
+&gt; &gt; A nested blockquote, i.e. a blockquote inside a blockquote.
+&gt; 
+&gt; ## Headers work
+&gt; 
+&gt; * lists too
+&gt; 
+&gt; and all other block-level elements
+&gt; &lt;cite&gt;Unfortunately, if you need a citation, that's a HTML thing&lt;/cite&gt;
+</code></pre>
+
+<p>Shows on the page as:</p>
+
+<blockquote>
+  <p>This is a paragraph.</p>
+
+  <blockquote>
+    <p>A nested blockquote, i.e. a blockquote inside a blockquote.</p>
+  </blockquote>
+
+  <h2 id="headers-work">Headers work</h2>
+
+  <ul>
+    <li>lists too</li>
+  </ul>
+
+  <p>and all other block-level elements
+<cite>Unfortunately, if you need a citation, that’s a HTML thing</cite></p>
+</blockquote>
+
+<p><br />
+<br />
+<br /></p>
+
+<h2 id="monospaced-text--code">Monospaced text &amp; Code</h2>
+
+<h3 id="inline-monospace">Inline monospace</h3>
+<p>Wrap inline snippets of code with <code>`</code>. That’s the funny backtick character in the bottom
+left of the keyboard next to <code>z</code> (On a Mac).</p>
+
+<p>So this:</p>
+
+<pre><code>For example, `&lt;section&gt;&lt;/section&gt;` should be wrapped as "inline".
+</code></pre>
+
+<p>Becomes this:</p>
+
+<p>For example, <code>&lt;section&gt;&lt;/section&gt;</code> should be wrapped as “inline” and formatted.</p>
+
+<h3 id="monospaced-blocks">Monospaced blocks.</h3>
+
+<p>This preserves the line breaks &amp; indentation of your text, as well as changing the
+font to monospace. You’ll notice these are heavily used on this page to show syntax.</p>
+
+<p>Adding four spaces to the start of a line, like this:</p>
+
+<pre><code>    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+</code></pre>
+
+<p>Does this:</p>
+
+<pre><code>// Some comments
+line 1 of code
+line 2 of code
+line 3 of code
+</code></pre>
+
+<h3 id="alternately">Alternately</h3>
+
+<p>Use “fences”  <code>~~~</code> to block in multiple lines of code. </p>
+
+<pre><code>~~~
+This is a monospace block that doesn't need to have 4 spaces in front of it
+~~~
+</code></pre>
+
+<p>Comes out of the wash appearing like this:</p>
+
+<pre><code>This is a monospace block that doesn't need to have 4 spaces in front of it
+</code></pre>
+
+<p><br />
+<br />
+<br />
+<br /></p>
+
+<h1 id="pro---markdown-inside-html">PRO - Markdown inside HTML</h1>
+
+<p><strong>Just a word of warning</strong> - This is <em>not</em> easy, but will result in some pretty cool looking posts.</p>
+
+<p>There are two parts to getting content into HTML whilst writing in Markdown. You have to first 
 capture your content in an object, by using the Liquid capture tags:- 
-<code>&#123;% capture unique_name %&#125;</code> …markdown here… 
+<code>&#123;% capture unique_name %&#125;</code> …Markdown here… 
 <code>&#123;% endcapture %&#125;</code> and then pull that object into HTML where you want it to
 appear, with the <code>&#123;&#123; unique_name | markdownify &#125;&#125;</code> Liquid tag.</p>
 

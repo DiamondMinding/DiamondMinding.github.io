@@ -246,7 +246,7 @@ cite {
 .fold-wrapper {
     /* fallback: */
     background-color: #9E1F63;
-    background-image: url('../img/scapes/tmp2.jpg');
+    background-image: url('../media/scapes/tmp2.jpg');
     background-size: cover;
     background-position: center center;
 }
@@ -537,7 +537,9 @@ hr {
 }
 
     .post-wrap + .post-wrap {
-	border-top: 1px solid #DDD;
+	border-top: 5px solid #EEE;
+	margin-top: 20px;
+	padding-top: 40px;
     }
 
 .post-title {
