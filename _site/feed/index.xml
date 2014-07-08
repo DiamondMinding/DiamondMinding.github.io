@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title type="text" xml:lang="en-GB">Diamond Minding</title>
+  <subtitle type="text">Diamond Minding is a Barin Wave Balancing company from Reading, United Kingdom</subtitle>
+  <link type="application/atom+xml" href="http://diamondminding.uk/feed" rel="self"/>
+  <link type="text" href="http://diamondminding.uk" rel="alternate"/>
+  <updated>2014-07-08T15:12:38+01:00</updated>
+  <id>http://diamondminding.uk</id>
+  <author>
+    <name>Mary Pearson</name>
+  </author>	
+  
+    <entry>
+      <title>Markdown Syntax</title>
+      <link href="http://diamondminding.uk/2014/06/26/Markdown/"/>
+      <updated>2014-06-26T00:00:00+01:00</updated>
+      <id>http://diamondminding.uk/2014/06/26/Markdown/</id>
+      <content type="html">&lt;h1 id=&quot;what-it-is&quot;&gt;What it is&lt;/h1&gt;
+
+&lt;p&gt;Markdown is the simple syntax used for writing blog posts &amp;amp; pages in plain text in such
+a way as when uploaded to the site, the file has rich formatting, links, images &amp;amp; more.&lt;/p&gt;
+
+&lt;p&gt;This guide will show the syntax and appearance of all Markdown elements, first with the
+Markdown syntax,&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;In a block like this,
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Then show how that would appear on the webpage,&lt;/p&gt;
+
+&lt;p&gt;In a block like this.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-quick-note-on-writing-posts&quot;&gt;A quick note on writing posts&lt;/h3&gt;
+
+&lt;p&gt;All of the posts on this site need to be placed in the &lt;code&gt;_posts&lt;/code&gt; folder and named using
+the convention &lt;code&gt;YYYY-MM-DD-Post-Name.md&lt;/code&gt;. The &lt;code&gt;.md&lt;/code&gt; file extension means that this is a Markdown 
+file. Inside of that file, at the top of the document it is a &lt;em&gt;requirement&lt;/em&gt; to have a 
+section like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;---
+title: Post Title (Doesn&#39;t have to match the filename title)
+layout: post
+---
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Don’t change the &lt;code&gt;layout: post&lt;/code&gt; option unless you wish to use a different layout (They’re in the 
+&lt;code&gt;_layouts&lt;/code&gt; folder) which is highly unlikely and rarely necessary.&lt;/p&gt;
+
+&lt;p&gt;This section of the post is not Markdown so may confuse a third party application and render
+weirdly, showing a horizontal rule and treating the last line as a heading.&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;typography&quot;&gt;Typography&lt;/h1&gt;
+
+&lt;h2 id=&quot;headings&quot;&gt;Headings&lt;/h2&gt;
+
+&lt;p&gt;The main headings you’ll use, h1 &amp;amp; h2 use this syntax:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Heading 1
+=========
+
+Heading 2
+---------
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Which shows on the page as:&lt;/p&gt;
+
+&lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
+
+&lt;h2 id=&quot;heading-2&quot;&gt;Heading 2&lt;/h2&gt;
+
+&lt;p&gt;They can also follow the alternate syntax: 
+Headings from &lt;code&gt;h1&lt;/code&gt; through &lt;code&gt;h6&lt;/code&gt; can be written with a &lt;code&gt;#&lt;/code&gt; for each level of heading:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;# h1 Heading
+## h2 Heading
+### h3 Heading
+#### h4 Heading
+##### h5 Heading
+###### h6 Heading
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that anything past h4 has little use. These look like this in the final web page:&lt;/p&gt;
+
+&lt;h1 id=&quot;h1-heading&quot;&gt;h1 Heading&lt;/h1&gt;
+
+&lt;h2 id=&quot;h2-heading&quot;&gt;h2 Heading&lt;/h2&gt;
+
+&lt;h3 id=&quot;h3-heading&quot;&gt;h3 Heading&lt;/h3&gt;
+
+&lt;h4 id=&quot;h4-heading&quot;&gt;h4 Heading&lt;/h4&gt;
+
+&lt;h5 id=&quot;h5-heading&quot;&gt;h5 Heading&lt;/h5&gt;
+
+&lt;h6 id=&quot;h6-heading&quot;&gt;h6 Heading&lt;/h6&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;body-copy--paragraphs&quot;&gt;Body Copy  (Paragraphs)&lt;/h2&gt;
+
+&lt;p&gt;Body copy written as normal, plain text will be formed into paragraphs on the web page.
+Note that to start a new paragraph you need to leave a line, and that you can put single
+line breaks in anywhere without affecting the formatting. Note &lt;code&gt;...mandamus. Et legere ...&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;So this body copy in Markdown:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. 
+Et legere ocurreret pri, animal tacimates complectitur ad cum. 
+Cu eum inermis inimicus efficiendi. Labore officiis 
+his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.
+
+Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+per inceptos himenaeos. Nullam ut molestie arcu. Cras vitae arcu non 
+metus facilisis hendrerit. 
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Will look like:&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, graecis denique ei vel, at duo primis mandamus. 
+Et legere ocurreret pri, animal tacimates complectitur ad cum. 
+Cu eum inermis inimicus efficiendi. Labore officiis 
+his ex, soluta officiis concludaturque ei qui, vide sensibus vim ad.&lt;/p&gt;
+
+&lt;p&gt;Class aptent taciti sociosqu ad litora torquent per conubia nostra, 
+per inceptos himenaeos. Nullam ut molestie arcu. Cras vitae arcu non 
+metus facilisis hendrerit. &lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;emphasis&quot;&gt;Emphasis&lt;/h2&gt;
+
+&lt;h3 id=&quot;bold&quot;&gt;Bold&lt;/h3&gt;
+&lt;p&gt;For emphasizing a snippet of text with a heavier font-weight.&lt;/p&gt;
+
+&lt;p&gt;The following snippet of text is &lt;strong&gt;rendered as bold text&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;**this is bold text in Markdown**
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Will appear as:&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;this is as bold text in Markdown&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;italics&quot;&gt;Italics&lt;/h3&gt;
+&lt;p&gt;For emphasizing a snippet of text with italics.&lt;/p&gt;
+
+&lt;p&gt;The following snippet of text is &lt;em&gt;rendered as italicized text&lt;/em&gt;.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;_rendered as italicized text_
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Appears as:&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;rendered as italicized text&lt;/em&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;stylistic-elements&quot;&gt;Stylistic Elements&lt;/h1&gt;
+
+&lt;h2 id=&quot;lists&quot;&gt;Lists&lt;/h2&gt;
+
+&lt;h3 id=&quot;unordered-bullet-points&quot;&gt;Unordered (Bullet Points)&lt;/h3&gt;
+
+&lt;p&gt;A list of items in which the order of the items does not explicitly matter.&lt;/p&gt;
+
+&lt;p&gt;You may use any of the following symbols to denote bullets for each list item:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;* valid bullet
+- valid bullet
++ valid bullet
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For example&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;+ Lorem ipsum dolor sit amet
++ Consectetur adipiscing elit
++ Integer molestie lorem at massa
++ Facilisis in pretium nisl aliquet
++ Nulla volutpat aliquam velit
+  - Phasellus iaculis neque
+  - Purus sodales ultricies
+  - Vestibulum laoreet porttitor sem
+  - Ac tristique libero volutpat at
++ Faucibus porta lacus fringilla vel
++ Aenean sit amet erat nunc
++ Eget porttitor lorem
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Will get nicely displayed as:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+  &lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+  &lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+  &lt;li&gt;Nulla volutpat aliquam velit
+    &lt;ul&gt;
+      &lt;li&gt;Phasellus iaculis neque&lt;/li&gt;
+      &lt;li&gt;Purus sodales ultricies&lt;/li&gt;
+      &lt;li&gt;Vestibulum laoreet porttitor sem&lt;/li&gt;
+      &lt;li&gt;Ac tristique libero volutpat at&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+  &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+  &lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;ordered-numbered-lists&quot;&gt;Ordered (Numbered Lists)&lt;/h3&gt;
+
+&lt;p&gt;A list of items in which the order of items does explicitly matter.
+&lt;em&gt;Be careful&lt;/em&gt; to ensure that the indentation of nested lists is the same as the indentation
+of the text above it&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. Lorem ipsum dolor sit amet
+2. Consectetur adipiscing elit
+   1. Integer molestie lorem at massa
+   2. Facilisis in pretium nisl aliquet
+   3. Nulla volutpat aliquam velit
+3. Faucibus porta lacus fringilla vel
+4. Aenean sit amet erat nunc
+5. Eget porttitor lorem
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Again becomes:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+  &lt;li&gt;Consectetur adipiscing elit
+    &lt;ol&gt;
+      &lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+      &lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+      &lt;li&gt;Nulla volutpat aliquam velit&lt;/li&gt;
+    &lt;/ol&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+  &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+  &lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;strong&gt;PROTIP&lt;/strong&gt;: If you just use &lt;code&gt;1.&lt;/code&gt; for each number, the end product will still be a correctly
+numbered list. For example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;1. Lorem ipsum dolor sit amet
+1. Consectetur adipiscing elit
+1. Integer molestie lorem at massa
+1. Facilisis in pretium nisl aliquet
+1. Nulla volutpat aliquam velit
+1. Faucibus porta lacus fringilla vel
+1. Aenean sit amet erat nunc
+1. Eget porttitor lorem
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Will get wonderfully fixed for you like this:&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Lorem ipsum dolor sit amet&lt;/li&gt;
+  &lt;li&gt;Consectetur adipiscing elit&lt;/li&gt;
+  &lt;li&gt;Integer molestie lorem at massa&lt;/li&gt;
+  &lt;li&gt;Facilisis in pretium nisl aliquet&lt;/li&gt;
+  &lt;li&gt;Nulla volutpat aliquam velit&lt;/li&gt;
+  &lt;li&gt;Faucibus porta lacus fringilla vel&lt;/li&gt;
+  &lt;li&gt;Aenean sit amet erat nunc&lt;/li&gt;
+  &lt;li&gt;Eget porttitor lorem&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;tables&quot;&gt;Tables&lt;/h2&gt;
+
+&lt;p&gt;Tables can be a bit of a formatting nightmare, so use them sparingly. There’s a compromise
+between the complexity of the Markdown syntax and the features, so there aren’t many options here.
+Note that the line of &lt;code&gt;|---|---|---|&lt;/code&gt; etc. is optional and makes the row above a header.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;| First cell | Second cell | Third cell |
+|------------|-------------|------------|
+| First      | Second      | Third      |
+| First      | Second      | Third      |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Will get turned into:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;First cell&lt;/th&gt;
+      &lt;th&gt;Second cell&lt;/th&gt;
+      &lt;th&gt;Third cell&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First&lt;/td&gt;
+      &lt;td&gt;Second&lt;/td&gt;
+      &lt;td&gt;Third&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;First&lt;/td&gt;
+      &lt;td&gt;Second&lt;/td&gt;
+      &lt;td&gt;Third&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;You can also affect the indentation of table columns with some slightly tricky syntax:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | £1600 |
+| col 2 is      | centered      |   £12 |
+| zebra stripes | are neat      |    £1 |
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Adding colons in the place of a &lt;code&gt;-&lt;/code&gt; will either centre the text in that column or right-align it, based on whether you use &lt;code&gt;:-----:&lt;/code&gt; or &lt;code&gt;------:&lt;/code&gt;. The above example looks like this:&lt;/p&gt;
+
+&lt;table&gt;
+  &lt;thead&gt;
+    &lt;tr&gt;
+      &lt;th&gt;Tables&lt;/th&gt;
+      &lt;th style=&quot;text-align: center&quot;&gt;Are&lt;/th&gt;
+      &lt;th style=&quot;text-align: right&quot;&gt;Cool&lt;/th&gt;
+    &lt;/tr&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 3 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;right-aligned&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;£1600&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;col 2 is&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;centered&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;£12&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+      &lt;td&gt;zebra stripes&lt;/td&gt;
+      &lt;td style=&quot;text-align: center&quot;&gt;are neat&lt;/td&gt;
+      &lt;td style=&quot;text-align: right&quot;&gt;£1&lt;/td&gt;
+    &lt;/tr&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;links&quot;&gt;Links&lt;/h2&gt;
+
+&lt;h3 id=&quot;basic-link&quot;&gt;Basic link&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;[Google UK](https://google.co.uk)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Will show up as&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://google.co.uk&quot;&gt;Google UK&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;linking-to-stuff-on-your-site&quot;&gt;Linking to stuff on your site&lt;/h3&gt;
+
+&lt;p&gt;There’s a more futureproof way of linking to your own content.&lt;/p&gt;
+
+&lt;pre&gt;[Awesome Post](&amp;#123;% post-url 2014-10-20-name-of-post %&amp;#125;)&lt;/pre&gt;
+
+&lt;p&gt;This is shown as:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;/2014/06/26/Markdown/&quot;&gt;Awesome Post&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;As long as the &lt;code&gt;2014-10-20-name-of-post&lt;/code&gt; part matches the filename of the post you’re linking
+to (notice the lack of a .md extension) this will work. Also if it isn’t, the site won’t update,
+&lt;strong&gt;which is bad&lt;/strong&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;add-a-title-to-a-link&quot;&gt;Add a title to a link&lt;/h3&gt;
+
+&lt;pre&gt;&lt;code&gt;[Google UK](https://google.co.uk &quot;Visit Google UK&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Comes out as this: (hover over the link, there should be a tooltip)&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://google.co.uk&quot; title=&quot;Visit Google UK&quot;&gt;Google UK&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;footnote-links&quot;&gt;Footnote Links&lt;/h3&gt;
+
+&lt;p&gt;Instead of placing the URL next to the link like &lt;code&gt;[Link Name](http://website.com)&lt;/code&gt; you can instead
+place an identifying name next to the link, as shown below. This method still supports titles.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[Google UK][google]
+
+... You can put anything in here ...
+
+[google]: https://www.google.co.uk &quot;Go to Google UK&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Like so:&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.google.co.uk&quot; title=&quot;Go to Google UK&quot;&gt;Google UK&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;images&quot;&gt;Images&lt;/h2&gt;
+&lt;p&gt;Images have a similar syntax to links but start with an exclamation point.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;![Minion](http://octodex.github.com/images/minion.png)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Gets shown as:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://octodex.github.com/images/minion.png&quot; alt=&quot;Minion&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;In the same way as images, you can add alternate text that will show if the image fails to load. 
+(Doing this is recommended by the people who invented the Web)&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;![Alt text](http://octodex.github.com/images/stormtroopocat.jpg &quot;The Stormtroopocat&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Again gets shown as:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://octodex.github.com/images/stormtroopocat.jpg&quot; alt=&quot;Alt text&quot; title=&quot;The Stormtroopocat&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Like links, Images also have a footnote style syntax for adding the URL later on in the document.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;![Alt text][id]
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://octodex.github.com/images/dojocat.jpg&quot; alt=&quot;Alt text&quot; title=&quot;The Dojocat&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;With a reference later in the document defining the URL location. 
+Note that the reference is invisible.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;[id]: http://octodex.github.com/images/dojocat.jpg  &quot;The Dojocat&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt; &lt;/p&gt;
+
+&lt;h2 id=&quot;horizontal-rules&quot;&gt;Horizontal Rules&lt;/h2&gt;
+
+&lt;p&gt;The HTML &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; element is for creating a “thematic break” between paragraph-level elements. 
+In Markdown, you can create a &lt;code&gt;&amp;lt;hr&amp;gt;&lt;/code&gt; with any of the following in your Markdown document:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code&gt;___&lt;/code&gt;: three consecutive underscores&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;---&lt;/code&gt;: three consecutive dashes&lt;/li&gt;
+  &lt;li&gt;&lt;code&gt;***&lt;/code&gt;: three consecutive asterisks&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Any of these would look like:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;block-quotes&quot;&gt;Block Quotes&lt;/h2&gt;
+
+&lt;p&gt;For quoting blocks of content from another source within your document.&lt;/p&gt;
+
+&lt;p&gt;Add &lt;code&gt;&amp;gt;&lt;/code&gt; before any text you want to quote. &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Will show up as:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Blockquotes can also be nested:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&amp;gt; This is a paragraph.
+&amp;gt; 
+&amp;gt; &amp;gt; A nested blockquote, i.e. a blockquote inside a blockquote.
+&amp;gt; 
+&amp;gt; ## Headers work
+&amp;gt; 
+&amp;gt; * lists too
+&amp;gt; 
+&amp;gt; and all other block-level elements
+&amp;gt; &amp;lt;cite&amp;gt;Unfortunately, if you need a citation, that&#39;s a HTML thing&amp;lt;/cite&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Shows on the page as:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a paragraph.&lt;/p&gt;
+
+  &lt;blockquote&gt;
+    &lt;p&gt;A nested blockquote, i.e. a blockquote inside a blockquote.&lt;/p&gt;
+  &lt;/blockquote&gt;
+
+  &lt;h2 id=&quot;headers-work&quot;&gt;Headers work&lt;/h2&gt;
+
+  &lt;ul&gt;
+    &lt;li&gt;lists too&lt;/li&gt;
+  &lt;/ul&gt;
+
+  &lt;p&gt;and all other block-level elements
+&lt;cite&gt;Unfortunately, if you need a citation, that’s a HTML thing&lt;/cite&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;monospaced-text--code&quot;&gt;Monospaced text &amp;amp; Code&lt;/h2&gt;
+
+&lt;h3 id=&quot;inline-monospace&quot;&gt;Inline monospace&lt;/h3&gt;
+&lt;p&gt;Wrap inline snippets of code with &lt;code&gt;`&lt;/code&gt;. That’s the funny backtick character in the bottom
+left of the keyboard next to &lt;code&gt;z&lt;/code&gt; (On a Mac).&lt;/p&gt;
+
+&lt;p&gt;So this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;For example, `&amp;lt;section&amp;gt;&amp;lt;/section&amp;gt;` should be wrapped as &quot;inline&quot;.
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Becomes this:&lt;/p&gt;
+
+&lt;p&gt;For example, &lt;code&gt;&amp;lt;section&amp;gt;&amp;lt;/section&amp;gt;&lt;/code&gt; should be wrapped as “inline” and formatted.&lt;/p&gt;
+
+&lt;h3 id=&quot;monospaced-blocks&quot;&gt;Monospaced blocks.&lt;/h3&gt;
+
+&lt;p&gt;This preserves the line breaks &amp;amp; indentation of your text, as well as changing the
+font to monospace. You’ll notice these are heavily used on this page to show syntax.&lt;/p&gt;
+
+&lt;p&gt;Adding four spaces to the start of a line, like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;    // Some comments
+    line 1 of code
+    line 2 of code
+    line 3 of code
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Does this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Some comments
+line 1 of code
+line 2 of code
+line 3 of code
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h3 id=&quot;alternately&quot;&gt;Alternately&lt;/h3&gt;
+
+&lt;p&gt;Use “fences”  &lt;code&gt;~~~&lt;/code&gt; to block in multiple lines of code. &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;~~~
+This is a monospace block that doesn&#39;t need to have 4 spaces in front of it
+~~~
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Comes out of the wash appearing like this:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;This is a monospace block that doesn&#39;t need to have 4 spaces in front of it
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;
+&lt;br /&gt;&lt;/p&gt;
+
+&lt;h1 id=&quot;pro---markdown-inside-html&quot;&gt;PRO - Markdown inside HTML&lt;/h1&gt;
+
+&lt;p&gt;&lt;strong&gt;Just a word of warning&lt;/strong&gt; - This is &lt;em&gt;not&lt;/em&gt; easy, but will result in some pretty cool looking posts.&lt;/p&gt;
+
+&lt;p&gt;There are two parts to getting content into HTML whilst writing in Markdown. You have to first 
+capture your content in an object, by using the Liquid capture tags:- 
+&lt;code&gt;&amp;#123;% capture unique_name %&amp;#125;&lt;/code&gt; …Markdown here… 
+&lt;code&gt;&amp;#123;% endcapture %&amp;#125;&lt;/code&gt; and then pull that object into HTML where you want it to
+appear, with the &lt;code&gt;&amp;#123;&amp;#123; unique_name | markdownify &amp;#125;&amp;#125;&lt;/code&gt; Liquid tag.&lt;/p&gt;
+
+&lt;p&gt;So, for example:&lt;/p&gt;
+
+&lt;pre&gt;
+&amp;#123;% capture jumbo %&amp;#125;
+Heading
+=======
+Paragraphs, and basically any other Markdown you can think of.
+&amp;#123;% endcapture %&amp;#125;
+
+&amp;lt;div class=&quot;jumbotron&quot;&amp;gt;
+    &amp;#123;&amp;#123; jumbo | markdownify &amp;#125;&amp;#125;
+&amp;lt;/div&amp;gt;
+&lt;/pre&gt;
+
+&lt;p&gt;will get rendered out as:&lt;/p&gt;
+
+&lt;div class=&quot;jumbotron&quot;&gt;
+    
+&lt;h1 id=&quot;heading&quot;&gt;Heading&lt;/h1&gt;
+&lt;p&gt;Paragraphs, and basically any other Markdown you can think of.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Note that the &lt;code&gt;jumbotron&lt;/code&gt; class on the HTML &lt;code&gt;&amp;lt;div&amp;gt;&lt;/code&gt; is an included 
+&lt;a href=&quot;http://getbootstrap.com&quot;&gt;Bootstrap&lt;/a&gt; class. See that link for more formatting options.&lt;/p&gt;
+
+&lt;p&gt;Also, the name &lt;code&gt;jumbo&lt;/code&gt; used in the capture must be the only capture called &lt;code&gt;jumbo&lt;/code&gt; in the document.
+You can re-use any data that you capture multiple times in the document. Liquid can do a lot, lot more
+so check out the &lt;a href=&quot;http://jekyllrb.com/docs/home/&quot;&gt;Jekyll documentation&lt;/a&gt; for more information.&lt;/p&gt;
+
+</content>
+    </entry>
+  
+    <entry>
+      <title>Hello World</title>
+      <link href="http://diamondminding.uk/2014/06/25/Hello-World/"/>
+      <updated>2014-06-25T00:00:00+01:00</updated>
+      <id>http://diamondminding.uk/2014/06/25/Hello-World/</id>
+      <content type="html">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce id enim nisl. Sed sed venenatis tellus. Nunc lobortis lectus velit, nec congue massa aliquam ut. Mauris id interdum sem. Suspendisse non lorem convallis, consectetur ipsum in, tincidunt tellus. Donec ante tortor, tempor quis fringilla quis, pharetra ut elit. Mauris bibendum sed urna eu vestibulum. Etiam id sem sed mi dignissim ultricies. Integer euismod, tellus eget laoreet laoreet, risus mi commodo quam, sed sagittis velit eros sit amet metus. Duis nec diam ipsum. Nullam non facilisis est, at gravida dolor. Vivamus eget iaculis est, nec cursus urna.&lt;/p&gt;
+
+&lt;p&gt;Curabitur imperdiet ullamcorper lorem a congue. In pretium tortor nisi, sed laoreet nulla dignissim nec. Aenean velit quam, porta et pharetra eu, iaculis sit amet odio. Maecenas eu dictum augue. Sed pulvinar dolor vitae metus molestie mattis. Curabitur vitae iaculis nibh. Mauris purus ipsum, laoreet eget ultrices quis, interdum vitae dui. Fusce malesuada, turpis et sollicitudin interdum, felis justo cursus tortor, eu congue tellus enim ac justo. Nullam tempus consequat felis, id aliquet sapien. Morbi pharetra, lacus a tempor imperdiet, odio elit consequat dui, eget fermentum ligula orci a nibh. Nullam vitae neque vitae justo ullamcorper elementum. Duis facilisis magna eget interdum porta.&lt;/p&gt;
+</content>
+    </entry>
+  
+</feed>

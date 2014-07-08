@@ -1,9 +1,10 @@
 # Site Settings
 title: Diamond Minding
 email: web@diamondminding.uk
-description: "Diamond Minding is a Barin Wave Balancing company from Reading, United Kingdom"
+description: "Diamond Minding is a Brain Wave Balancing company from Reading, United Kingdom"
 baseurl: ""
 url: "http://diamondminding.uk"
+author: "Mary Pearson"
 
 # Main Navigation (Manual)
 navigation:
