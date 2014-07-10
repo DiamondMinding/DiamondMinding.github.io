@@ -3,9 +3,19 @@ layout: page
 title: Blog
 ---
 
+{% if paginator.total_pages > 1 %}
+<ul class="pager">
+  <li>Jump to:</li>
+  {% for post in paginator.posts %}
+  <li><a href="#{{ post.title }}"></a></li>
+  {% endfor %}
+</ul>
+{% endif %}
+
 {% for post in paginator.posts %}
 <div class="post-wrap">
   <h1 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+  <a name="{{ post.title }}"></a>
   <p class="post-meta">
     <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
   </p>
