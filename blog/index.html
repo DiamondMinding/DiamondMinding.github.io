@@ -6,14 +6,14 @@ title: Blog
 <ol class="breadcrumb">
   <li class="active">Jump to:</li>
   {% for post in paginator.posts %}
-  <li><a href="#{{ post.title }}">{{ post.title }}</a></li>
+  <li><a href="#{{ post.title | xml_escape }}">{{ post.title }}</a></li>
   {% endfor %}
 </ol>
 
 {% for post in paginator.posts %}
+<a name="{{ post.title | xml_escape }}"></a>
 <div class="post-wrap">
   <h1 class="post-title"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
-  <a name="{{ post.title }}"></a>
   <p class="post-meta">
     <span class="date">{{ post.date | date: "%b %-d, %Y" }}</span>
   </p>
