@@ -42,13 +42,14 @@
 ::selection { background: #bfd8e7; color: inherit; }
 mark, .mark { background: #9AC2D9; color: #000; }
 
-@media print
-a[href]:after {
-    content: "";
-}
-@media print
-p a[href]:after {
-	content: (" attr(href) ")	
+@media print {
+	a[href]:after {
+    	content: "";
+	}
+	
+	p a[href]:after {
+		content: (" attr(href) ")	
+	}
 }
 
 .alert {
@@ -309,9 +310,10 @@ footer {
 	font-size: 20px;
     }
 
-@media print
-.go-top {
-	display: none;
+@media print {
+	.go-top {
+		display: none;
+	}
 }
 
 header {
