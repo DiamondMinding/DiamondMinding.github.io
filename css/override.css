@@ -45,10 +45,11 @@ mark, .mark { background: #9AC2D9; color: #000; }
 @media print {
 	a[href]:after {
     	content: "";
+    	color: #0000EE !important;
 	}
 	
 	p a[href]:after {
-		content: "(" attr(href) ")";	
+		content: " (" attr(href) ")";	
 	}
 }
 
