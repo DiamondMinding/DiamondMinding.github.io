@@ -43,6 +43,10 @@
 mark, .mark { background: #9AC2D9; color: #000; }
 
 @media print {
+	a {
+    	color: #0000EE !important;
+	}
+	
 	a[href]:after {
     	content: "";
     	color: #0000EE !important;
@@ -50,6 +54,8 @@ mark, .mark { background: #9AC2D9; color: #000; }
 	
 	p a[href]:after {
 		content: " (" attr(href) ")";	
+		font-size: 90%;
+		font-weight: normal;
 	}
 }
 
