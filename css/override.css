@@ -42,6 +42,17 @@
 ::selection { background: #bfd8e7; color: inherit; }
 mark, .mark { background: #9AC2D9; color: #000; }
 
+@media print {
+    a[href]:after {
+        content: "";
+    }
+}
+
+@media (print){
+	p a[href]:after {
+		content: (" attr(href) ")	
+	}
+}
 
 .alert {
     margin: 0;
