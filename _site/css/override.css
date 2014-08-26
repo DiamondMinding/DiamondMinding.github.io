@@ -22,10 +22,10 @@
 **/
 
 ::-webkit-scrollbar {
-    width: 8px;
-    max-width: 8px;
-    height: 8px;
-    max-width: 8px;
+    width: 10px;
+    max-width: 10px;
+    height: 10px;
+    max-width: 10px;
 }
 ::-webkit-scrollbar-track {
     background: #DDD;
@@ -36,12 +36,28 @@
     background: #4988B5;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(88,88,86,0.8);
+    background: #4988B5;
 }
 
 ::selection { background: #bfd8e7; color: inherit; }
 mark, .mark { background: #9AC2D9; color: #000; }
 
+@media print {
+	a {
+    	color: #0000EE !important;
+	}
+	
+	a[href]:after {
+    	content: "";
+    	color: #0000EE !important;
+	}
+	
+	p a[href]:after {
+		content: " (" attr(href) ")";	
+		font-size: 90%;
+		font-weight: normal;
+	}
+}
 
 .alert {
     margin: 0;
@@ -301,6 +317,12 @@ footer {
 	font-size: 20px;
     }
 
+@media print {
+	.go-top {
+		display: none;
+		opacity: 0;
+	}
+}
 
 header {
     padding: 10px 0px;

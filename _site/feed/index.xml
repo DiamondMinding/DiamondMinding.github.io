@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title type="text" xml:lang="en-GB">Diamond Minding</title>
-  <subtitle type="text">Diamond Minding is a Barin Wave Balancing company from Reading, United Kingdom</subtitle>
+  <subtitle type="text">Diamond Minding is a Brain Wave Balancing company from Reading, United Kingdom</subtitle>
   <link type="application/atom+xml" href="http://diamondminding.uk/feed" rel="self"/>
   <link type="text" href="http://diamondminding.uk" rel="alternate"/>
-  <updated>2014-07-08T15:12:38+01:00</updated>
+  <updated>2014-08-26T22:39:23+01:00</updated>
   <id>http://diamondminding.uk</id>
   <author>
     <name>Mary Pearson</name>
