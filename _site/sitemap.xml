@@ -38,6 +38,13 @@
     </url>
   
     <url>
+      <loc>http://diamondminding.uk/faq/</loc>
+      <lastmod>2014-07-08</lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
       <loc>http://diamondminding.uk/</loc>
       <lastmod></lastmod>
       <changefreq>monthly</changefreq>
@@ -54,6 +61,13 @@
     <url>
       <loc>http://diamondminding.uk/feed/index.xml</loc>
       <lastmod></lastmod>
+      <changefreq>monthly</changefreq>
+      <priority>1.0</priority>
+    </url>
+  
+    <url>
+      <loc>http://diamondminding.uk/research/</loc>
+      <lastmod>2014-07-08</lastmod>
       <changefreq>monthly</changefreq>
       <priority>1.0</priority>
     </url>

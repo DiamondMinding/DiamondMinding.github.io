@@ -12,14 +12,18 @@ navigation:
    url: /
  - text: About
    url: /about/
- - text: Contact
-   url: /contact/
  - text: Services
    url: /services/
+ - text: FAQ
+   url: /faq/
+ - text: Research
+   url: /research/
  - text: Blog
    url: /blog/
  - text: Affiliates
    url: /affiliates/
+ - text: Contact
+   url: /contact/
 
 
 # Build Settings

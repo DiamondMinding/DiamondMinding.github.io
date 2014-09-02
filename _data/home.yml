@@ -13,24 +13,27 @@ left_circle: |
     It's about you.
     ===============
     
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis ligula dui, in euismod sem iaculis vitae. Nunc neque metus, convallis non diam nec, venenatis placerat odio.
-    
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis ligula dui, in euismod sem iaculis vitae. Nunc neque metus, convallis non diam nec, venenatis placerat odio.
+    About understanding you<br>
+    Accepting you as you are<br>
+    Supporting you as you evolve<br>
     
 # Markdown Enabled
 middle_circle: |
-    Brain Balancing?
-    ================
+    Its about your brain.
+    ======================
     
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis ligula dui, in euismod sem iaculis vitae. Nunc neque metus, convallis non diam nec, venenatis placerat odio.
+    Its history, workings and defaults<br>
+    Its potential for change<br>
+    Supporting its return to balance<br>
 
 # Markdown Enabled
 right_circle: |
-    Clear your mind.
-    ================
+    Its about your mind.
+    ====================
 
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mollis ligula dui, in euismod sem iaculis vitae. Nunc neque metus, convallis non diam nec, venenatis placerat
-
+    How you think and feel<br>
+    How you relate to yourself and others<br>
+    How you know, create and influence<br>
 
 #    _     _                             _   _             
 #   | |__ | |_   _  ___    ___  ___  ___| |_(_) ___  _ __  
@@ -40,18 +43,18 @@ right_circle: |
 #                                                       
 
 # Plaintext
-blue_title: "What we do at Diamond Minding:"
+blue_title: ""
 
 # Unfortunately in HTML because of layout requirements
 # To change the video change the <iframe></iframe> tag
 blue_content: |
     <div class="centre-block iframe-feature">
         <div class="iframe-responsive">
-            <iframe src="http://player.vimeo.com/video/54348266" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+            <iframe src="http://player.vimeo.com/video/35585599" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
         </div>
     </div>
     <div class="centre-block" style="width: 200px;">
-        <a class="btn btn-info btn-feature btn-lg centre-block">Our Services</a>
+        <a class="btn btn-info btn-feature btn-lg centre-block" href="/services/">Our Services</a>
     </div>
 
 
